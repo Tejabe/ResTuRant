@@ -1,0 +1,69 @@
+/* body {
+    background-image: url(https://img.lovepik.com/element/40090/8371.png_1200.png);
+    backdrop-filter: blur(10px);
+} */
+.menu .menu-button .menu-container {
+    background-image: url(https://img.lovepik.com/element/40090/8371.png_1200.png);
+    backdrop-filter: blur(10px);
+}
+.menu-button {
+    display: flex;
+    justify-content: center; /* Corrected property for centering */
+    margin: 20px; /* Optional spacing around the button */
+}
+.tiffins {
+  display: flex;
+  justify-content: center;
+}
+.meals {
+  display: flex;
+  justify-content: center;
+}
+.sancks {
+  display: flex;
+  justify-content: center;
+}
+.dinner {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width:992px) {
+  .tiffins {
+    display: flex;
+    justify-content: center;
+    /* padding: 0px 0px 5px 200px; */
+  }
+  .menu-button {
+    display: flex;
+    justify-content: left; /* Corrected property for centering */
+    margin: 20px; /* Optional spacing around the button */
+}
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .menu-column {
+    width: 45%;
+  }
+
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+.menu-item span:first-child {
+    flex-grow: 1;
+    font-size: larger;
+    position: relative;
+    padding-right: 10px;
+  }
+
+.menu-item span:last-child {
+    color: red;
+    font-weight: bold;
+  }

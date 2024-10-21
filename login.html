@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./photos/logo-1.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="Home.css">
+    <script>
+        // JavaScript function to handle the button click
+        function redirectToHomePage(event) {
+          event.preventDefault(); // Prevent the default form submission behavior
+          window.location.href = "Home.html"; // Redirect to the home page (index.html)
+        }
+    
+        // Attach the function to the button after the DOM has loaded
+        document.addEventListener("DOMContentLoaded", function() {
+          const submitButton = document.querySelector('.submit');
+          if (submitButton) {
+            submitButton.addEventListener('click', redirectToHomePage);
+          }
+        });
+      </script>
+</head>
+<body>
+    <div class="good">
+        <div class="loginpage">
+            <h1>LOGIN</h1>
+            <div class="input-box">
+                <input type="text" placeholder="username" required>
+                <box-icon name='user-circle' type='solid' ></box-icon>
+            </div>
+            <div class="input-box">
+                         <input type="password" value="" id="" placeholder="password">
+                         
+            </div>
+            <div class="forgot-password">
+                <label><input type="checkbox" name="" class="Remember">Remember me</label>
+                <a href="#" class="p">FORGOT PASSWORD</a>
+            </div>
+            <div class="register">
+                <p>Don't have account? <a href="./register.html" class="r">REGISTER</a> </p>
+            </div>
+            <div class="submit">
+                <button class="button-light">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
